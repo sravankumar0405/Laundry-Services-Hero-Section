@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    /* height: 100vh; */
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fffefe;
+    width: 100vw;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    width: 70%;
+}
+.logo {
+    font-size: 2rem;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    color: #adb5bd;
+    margin: 0 25px;
+    /* padding: 6px; */
+}
+
+a:hover {
+    color: rgb(18, 175, 248);
+}
+
+.sign-up-btn {
+    position: absolute;
+    top: 0;
+    right: 75px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #0077ff;
+    padding: 17px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #e7f2ff;
+    cursor: pointer;
+}
+
+
+.Hero-section {
+   height: 100vh;
+   width: 100vw;
+   margin: auto;
+   /* position: absolute; */
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.left {
+    /* width: 40%; */
+    flex-basis: 35%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.right {
+    /* width: 40%; */
+    flex-basis: 40%;
+}
+
+h1 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    text-align: justify;
+    color: rgb(90, 90, 90);
+    user-select: none;
+}
+
+span {
+    color: #489dff;
+}
+
+.page-description {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #adb5bd;
+    line-height: 1.6rem;
+}
+
+.service-btn {
+    border: none;
+    background-color: #4297f8;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 19px 60px;
+    margin-top: 30px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.content-img {
+    width: 600px;
+    height: 600px;
+}
+
+
+/* media queries for responsive design for our laundry page Hero section */
+
+@media (max-width: 1024px) {
+
+    .Hero-section {
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+        z-index: -1;
+    }
+
+    .left {
+        width: 80%;
+    }
+
+   .content-img {
+        width: 400px;
+        height: 400px;
+   }
+}
